@@ -156,19 +156,6 @@ pre {
 
 .searchbox::before,
 .searchbox::after {
-  /* content: '';
-  position: absolute;
-  height: 100px;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-  background: var(--secondary-color);
-  transform: skew(2deg, 12deg);
-  transform: skewY(4deg);
-  -webkit-transform: skewY(4deg);
-  -moz-transform: skewY(4deg);
-  -ms-transform: skewY(4deg);
-  transform: translate(30px, 20px) rotate(20deg); */
   content: '';
   position: absolute;
   height: 100px;
@@ -217,28 +204,28 @@ pre {
   grid-template-columns: 4fr 3fr;
 }
 
-/* Languages */
+/* Materials Cards */
 
-.languages {
+.materials-card {
   background-color: var(--secondary-color);
 }
 
-.languages .flex {
+.materials-card .flex {
   flex-wrap: wrap;
 }
 
-.languages .card {
+.materials-card .card {
   text-align: center;
   margin: 18px 10px 40px;
   transition: transform 0.2s ease-in;
 }
 
-.languages .card h4 {
+.materials-card .card h4 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.languages .card:hover {
+.materials-card .card:hover {
   transform: translateY(-15px);
 }
 
