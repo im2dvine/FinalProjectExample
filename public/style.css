@@ -68,8 +68,7 @@ img {
 
 code,
 pre {
-  background: #333;
-  color: #fff;
+  color: var(--primary-color);
   padding: 10px;
 }
 

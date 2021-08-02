@@ -19,7 +19,7 @@ CREATE TABLE recycleCenters (
 drop table materials;
 
 CREATE TABLE materials (
-id int not null auto_increment not null,
+id int auto_increment not null,
 name varchar(50) not null,
 _created timestamp default now(),
 primary key (id)
