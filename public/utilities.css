@@ -4,10 +4,12 @@
     overflow: auto;
     padding: 0 40px;
   }
+
+
   
   .card {
-    background-color: #fff;
-    color: #333;
+    background-color: white;
+    color: var(--dark-color);
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -19,14 +21,14 @@
     padding: 10px 30px;
     cursor: pointer;
     background: var(--primary-color);
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
   }
   
   .btn-outline {
     background-color: transparent;
-    border: 1px #fff solid;
+    border: 1px white solid;
   }
   
   .btn:hover {
@@ -37,26 +39,26 @@
   .bg-primary,
   .btn-primary {
     background-color: var(--primary-color);
-    color: #fff;
+    color: white;
     font-size: 13px;
   }
   
   .bg-secondary,
   .btn-secondary {
     background-color: var(--secondary-color);
-    color: #fff;
+    color: white;
   }
   
   .bg-dark,
   .btn-dark {
     background-color: var(--dark-color);
-    color: #fff;
+    color: white;
   }
   
   .bg-light,
   .btn-light {
     background-color: var(--light-color);
-    color: #333;
+    color: var(--dark-color);
   }
   
   .bg-primary a,
@@ -65,7 +67,7 @@
   .btn-secondary a,
   .bg-dark a,
   .btn-dark a {
-    color: #fff;
+    color: white;
   }
   
   /* Text colors */
@@ -110,26 +112,26 @@
     text-align: center;
   }
   
-  /* Alert */
-  .alert {
+  /* Chirp */
+  .chirp {
     background-color: var(--light-color);
     padding: 10px 20px;
     font-weight: bold;
     margin: 15px 0;
   }
   
-  .alert i {
+  .chirp i {
     margin-right: 10px;
   }
   
-  .alert-success {
-    background-color: var(--success-color);
-    color: #fff;
+  .chirp-success {
+    
+    color: var(--primary-color);
   }
   
-  .alert-error {
+  .chirp-error {
     background-color: var(--error-color);
-    color: #fff;
+    color:white;
   }
   
   .flex {
@@ -191,6 +193,10 @@
   
   .m-5 {
     margin: 4rem;
+  }
+
+  .mz {
+    margin-bottom: 4rem;
   }
   
   /* Padding */
