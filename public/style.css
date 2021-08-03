@@ -7,7 +7,7 @@
   --secondary-color: #b3e3ff;
   --dark-color: #1c3fa8;
   --light-color: white;
-  --success-color: #5cb85c;
+  --success-color: #55a355;
   --error-color: #d9534f;
 }
 
@@ -19,7 +19,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #333;
+  color: black;
   line-height: 1.6;
   background-color: var(--secondary-color);
 }
@@ -30,7 +30,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
 h1,
@@ -122,7 +122,6 @@ pre {
 .searchbox .grid {
   overflow: visible;
   grid-template-columns: 55% auto;
-  /* gap: 30px; */
 }
 
 .searchbox-text {
@@ -146,8 +145,7 @@ pre {
 
 .searchbox-form input[type='text'],
 .searchbox-form input[type='email'] {
-  border: 0;
-  border-bottom: 1px solid #b4becb;
+  border: 1px solid #b4becb;
   width: 100%;
   padding: 3px;
   font-size: 16px;
@@ -155,18 +153,6 @@ pre {
 
 .searchbox-form input:focus {
   outline: none;
-}
-
-.searchbox::before,
-.searchbox::after {
-  content: '';
-  position: absolute;
-  height: 100px;
-  bottom: -70px;
-  right: -7px;
-  left: 0;
-  background: var(--secondary-color);
-  transform: translate(-3px, -1px) rotate(2deg);
 }
 
 /* Stats */
