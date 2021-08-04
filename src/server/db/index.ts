@@ -1,25 +1,28 @@
 import * as mysql from "mysql";
-import config from "../config";
+import Chirps from "./queries/chirps";
+import Users from './queries/users';
+import RecycleCenters from './queries/recyclecenters'
 
-const pool = mysql.createPool(config.mysql);
+const Connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'chirperapp',
+    password: 'password',
+    database: 'chirpr',
+    port: 3306
+});
 
-export const Query = <T = any>(query: string, value?: {} | any) => {
-  return new Promise<T>((resolve, reject) => {
-
-    const sql = mysql.format(query, value);
-    // console.log(sql); if it needs to be Debugged
-
-    pool.query(sql, value, (err, result) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(result);
-      }
+export const Query = (query: string, values?: Array<string | number>) => {
+    return new Promise<Array<any>>((resolve, reject) => {
+        Connection.query(query, values, (err, results) => {
+            if (err) return reject(err);
+            resolve(results);
+        });
     });
-  });
 };
 
-import recycleCenters from './queries/recyclecenters';
 export default {
-    recycleCenters
+    Chirps,
+    Users,
+    RecycleCenters
 }
+        
