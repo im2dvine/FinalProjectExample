@@ -8,8 +8,8 @@ router.get("/:id?", async (req, res) => {
   const id = req.params.id;
   if (id) {
     try {
-      const recycleCenter = await db.recycleCenters.one(id);
-      const materials = await db.recycleCenters.getMaterials(id);
+      const recycleCenter = await db.RecycleCenters.one(id);
+      const materials = await db.RecycleCenters.getMaterials(id);
       const centerAndMaterials = {
         center: recycleCenter[0],
         materials: materials[0],
@@ -22,7 +22,7 @@ router.get("/:id?", async (req, res) => {
     }
   } else {
     try {
-      const recycleCenters = await db.recycleCenters.all();
+      const recycleCenters = await db.RecycleCenters.all();
       // const materials = (id) => db.recycleCenters.getMaterials(id);
 
     //   let centersArr: Array<any> = [];

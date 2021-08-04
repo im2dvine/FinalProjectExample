@@ -17,10 +17,7 @@
     "@types/express": "^4.17.11",
     "@types/jquery": "^3.5.6",
     "@types/morgan": "^1.9.3",
-<<<<<<< HEAD
     "@types/mysql": "^2.15.19",
-=======
->>>>>>> ed7ec26f926b6e2cdd7eac02774b404f542c2eaa
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "@types/react-router": "^5.1.16",
