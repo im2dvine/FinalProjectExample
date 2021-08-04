@@ -1,12 +1,13 @@
 import * as mysql from "mysql";
-import Chirps from "./chirps";
-import Users from './users';
+import Chirps from "./queries/chirps";
+import Users from './queries/users';
+import RecycleCenters from './queries/recyclecenters'
 
 const Connection = mysql.createConnection({
     host: 'localhost',
-    user: 'chirperapp',
-    password: 'password',
-    database: 'chirpr',
+    user: 'captainPlanet',
+    password: 'onebottleatatime',
+    database: 'recycle',
     port: 3306
 });
 
@@ -21,6 +22,7 @@ export const Query = (query: string, values?: Array<string | number>) => {
 
 export default {
     Chirps,
-    Users
+    Users,
+    RecycleCenters
 }
         

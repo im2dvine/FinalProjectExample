@@ -1,4 +1,4 @@
-import {Query} from "./index";
+import {Query} from "../index";
 
 const all = async () => Query(`
     select chirps.id, chirps.content, chirps.location, users.name
