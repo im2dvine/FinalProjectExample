@@ -18,3 +18,8 @@ export const Query = <T = any>(query: string, value?: {} | any) => {
     });
   });
 };
+
+import recycleCenters from './queries/recyclecenters';
+export default {
+    recycleCenters
+}
