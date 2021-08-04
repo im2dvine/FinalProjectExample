@@ -151,7 +151,6 @@ values('Montevallo Recycle Center','1120 Overland Rd, Montevallo, AL 35115',' M-
 insert into recycleCenters (name, addr, hours, countyid, materialsid)
 values('Alabaster Recycling Center','22 Shady Acres Rd, Alabaster, AL 35007',' M-F 7:00am - 6:00pm, SS 8:00am - 5:00pm', 2, ? );
 
-<<<<<<< HEAD:db/Database.sql
 select * from chirps;
 select content from chirps;
 select * from users;
@@ -163,7 +162,6 @@ where chirps.userid = "2";
 CREATE USER 'chirperapp'@'localhost' IDENTIFIED BY 'password';
 
 GRANT ALL privilegs on chripr * To 'chiperapp'@'localhost';
-=======
 insert into centerMaterials (centerid, materialsid)
 values('1', '1');
 insert into centerMaterials (centerid, materialsid)
@@ -557,4 +555,3 @@ insert into centerMaterials (centerid, materialsid)
 values('18', '10');
 insert into centerMaterials (centerid, materialsid)
 values('18', '11');
->>>>>>> 93ef73501c9787b60de8df0a57b59fbe4e38815d:Database.sql
