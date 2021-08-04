@@ -1,0 +1,12 @@
+$theme-colors: (
+    'primary': #0091ea //Covalence Blue!  :D
+);
+
+body {
+    
+    background: url("https://images-na.ssl-images-amazon.com/images/I/91d7%2B1bEx8L._SL1500_.jpg");
+    background-size: contain;
+    color: white;
+};
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
