@@ -5,9 +5,9 @@ import RecycleCenters from './queries/recyclecenters'
 
 const Connection = mysql.createConnection({
     host: 'localhost',
-    user: 'chirperapp',
-    password: 'password',
-    database: 'chirpr',
+    user: 'captainPlanet',
+    password: 'onebottleatatime',
+    database: 'recycle',
     port: 3306
 });
 

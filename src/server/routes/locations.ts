@@ -3,7 +3,7 @@ import db from "../db";
 
 const router = Router();
 
-// Get request to /api/locations
+// Get request to /api/locations have to start at 3 
 router.get("/:id?", async (req, res) => {
   const id = req.params.id;
   if (id) {

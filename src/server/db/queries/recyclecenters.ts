@@ -1,8 +1,14 @@
 import { Query } from "../";
 
-const all = () => Query("Select * from recycleCenters");
+const all = () =>
+  Query(
+    `SELECT recycleCenters.id, recycleCenters.name, recycleCenters.addr, recycleCenters.hours, county.name as county FROM recycleCenters JOIN county ON county.id = recycleCenters.countyid`
+  );
 const one = (id: string) =>
-  Query(`SELECT * FROM recycleCenters WHERE recycleCenters.id = ?`, [id]);
+  Query(
+    `SELECT recycleCenters.id, recycleCenters.name, recycleCenters.addr, recycleCenters.hours, county.name as county FROM recycleCenters JOIN county ON county.id = recycleCenters.countyid WHERE recycleCenters.id = ?`,
+    [id]
+  );
 const getMaterials = (id: string) => Query(`CALL spcenterMaterials(?)`, [id]);
 
 export default {
