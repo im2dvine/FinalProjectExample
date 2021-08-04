@@ -544,3 +544,15 @@ insert into centerMaterials (centerid, materialsid)
 values('18', '10');
 insert into centerMaterials (centerid, materialsid)
 values('18', '11');
+
+select * from chirps;
+select content from chirps;
+select * from users;
+select chirps.content, chirps.location, users.name
+from chirps
+Join users on chirps.userid = users.id
+where chirps.userid = "2";
+
+CREATE USER 'chirperapp'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL privilegs on chripr * To 'chiperapp'@'localhost';
